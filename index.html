@@ -1071,14 +1071,14 @@
         $(document).ready(function () {
 
             $('#btn1').click(function (e) {
-                var email_address = $("#contact-email").val();
+                var email = $("#contact-email").val();
                 var name = $("#contact-name").val();
                 var phone = $("#contact-phone").val();
                 var subject = "Reaching out from alzihadi.github.io";
                 var message = $("#contact-message").val();
-                var body = message + " \t \n\n " + "Name: " + name + " \n\n " + "Phone: " + phone
+                var body = message + " \t\n\n || " + "Name: " + name + ", \n\n " + "Phone: " + phone + ", \n\n Email: " + email
 
-                window.location.replace(" mailto:"+ email_address +"?subject=" + subject + "&body=" + body);
+                window.location.replace(" mailto:asm.alzihadi@gmail.com?subject=" + subject + "&body=" + body);
 
             });
         });
